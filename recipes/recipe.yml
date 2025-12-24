@@ -25,6 +25,10 @@ modules:
     repos:
       copr:
         - atim/starship
+        - scottames/ghostty
+    install:
+      packages:
+        - ghostty
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -35,7 +39,6 @@ modules:
   - type: rpm-ostree
     install:
       - zsh
-      - ghostty
 
   - type: default-flatpaks
     configurations:
